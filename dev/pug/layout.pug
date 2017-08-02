@@ -1,0 +1,13 @@
+include ../../node_modules/bemto.pug/bemto
+
+include mixins/head.pug
+include mixins/mixins.pug
+doctype html
+html(lang='ru')
+	+head('Seona')
+	body
+		.content
+			include modules/header.pug
+			block content
+			include modules/footer.pug
+		script(src="js/bundle.js")

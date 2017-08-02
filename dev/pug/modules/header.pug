@@ -1,0 +1,9 @@
+-menu = [{title:'Главная',link:'#'},{title:'ФОТО И ВИДЕО',link:'#'},{title:'',link:'#'},{title:'Форма отзыва',link:'#'},{title:'HTML academy',link:'#'}]
++b.HEADER.header
+	+b.NAV.nav
+		-for (var i=0; i<menu.length; i++)
+			+e.A.item(href = menu[i].link)
+				span #{menu[i].title}
+	+e.title
+		+e.logo
+			img(src='images/text-sedona.svg', alt='logo-sedona')

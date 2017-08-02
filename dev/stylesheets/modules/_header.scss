@@ -1,0 +1,68 @@
+.header{
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 10;
+
+    &__title{
+        position: relative;
+        background-image: url('../images/back-desktop-jpg.jpg');
+        background-position: top center;
+        height: 357px;
+        width: 100%;
+
+        &:after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/bg-intro-triangle-desktop.svg');
+            width: 1202px;
+            height: 57px;
+            bottom: 0;
+            top: auto;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__logo{
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        img{
+            width: 461px;
+            height: 79px;
+        }
+    }
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    &:before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/logo-sedona-desktop.svg');
+        width: 188px;
+        height: 96px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    &__item{
+        text-align: center;
+        span{
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 56px;
+            text-transform: uppercase;
+        }
+    }
+}
