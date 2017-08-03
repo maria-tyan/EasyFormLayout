@@ -47,14 +47,66 @@
             <h1>Оставьте свой отзыв</h1>
             <h3>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
                 вами достопримечательностях</h3>
-            <div class="form__col-2">
-                <div class="form__col">
-                    <h2>ВАше Общее впечатление:</h2>
+            <form class="form">
+                <div class="form__col-2">
+                    <div class="form__col">
+                        <h2>ВАше Общее впечатление:</h2>
+                        <div class="radio-wrapper">
+                            <div class="radio radio_style">
+                                <input name="expression" value="Скорее положительное" type="radio">
+                                <span></span>
+                                <label>Скорее положительное</label>
+                            </div>
+                        </div>
+                        <div class="radio-wrapper">
+                            <div class="radio radio_style">
+                                <input name="expression" value="Скорее отрицательное" type="radio">
+                                <span></span>
+                                <label>Скорее отрицательное</label>
+                            </div>
+                        </div>
+                        <div class="radio-wrapper">
+                            <div class="radio radio_style">
+                                <input name="expression" value="Скорее отрицательное" type="radio">
+                                <span></span>
+                                <label>Затрудняюсь ответить</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__col form__col_left-padd">
+                        <h2>Представьтесь:</h2>
+                        <div class="input-wrapper">
+                            <label>ИМЯ*:</label>
+                            <input name="name" id="name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label>ФАМИЛИЯ*:</label>
+                            <input name="second-name" id="second-name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label>Отчество:</label>
+                            <input name="last-name" id="last-name">
+                        </div>
+                    </div>
                 </div>
-                <div class="form__col">
-                    <h2>Представьтесь:</h2>
+                <div class="form__col form__col_head">
+                    <h2>Контактная информация:</h2>
+                    <div class="input-wrapper">
+                        <label>Телефон*:</label>
+                        <input class="phone-call" name="phone" id="phone">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Электронная почта*:</label>
+                        <input name="mail" id="mail">
+                    </div>
                 </div>
-            </div>
+                <div class="form__col form__col_head">
+                    <h2>посещенные достопримечательности:</h2>
+                </div>
+                <div class="form__col form__col_head">
+                    <h2>Опишите свои эмоции:</h2>
+                </div>
+            </form>
         </section>
         <footer class="footer">
         </footer>

@@ -1,10 +1,45 @@
 +b.SECTION.form
 	h1 Оставьте свой отзыв
 	h3 Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-
-	+e.col-2
-		+e.col
-			h2 ВАше Общее впечатление:
-			
-		+e.col
-			h2 Представьтесь:
+	+b.FORM.form
+		+e.col-2
+			+e.col
+				h2 ВАше Общее впечатление:
+				+b.radio-wrapper
+					+b.radio_style
+						input(name="expression" value="Скорее положительное" type="radio")
+						span
+						label Скорее положительное
+				+b.radio-wrapper
+					+b.radio_style
+						input(name="expression" value="Скорее отрицательное" type="radio")
+						span
+						label Скорее отрицательное
+				+b.radio-wrapper
+					+b.radio_style
+						input(name="expression" value="Скорее отрицательное" type="radio")
+						span
+						label Затрудняюсь ответить
+			+e.col_left-padd
+				h2 Представьтесь:
+				+b.input-wrapper
+					label ИМЯ*:
+					input(name='name', id='name')
+				+b.input-wrapper
+					label ФАМИЛИЯ*:
+					input(name='second-name', id='second-name')
+				+b.input-wrapper
+					label Отчество:
+					input(name='last-name', id='last-name') 
+		+e.col_head
+			h2 Контактная информация:
+			+b.input-wrapper
+				label Телефон*:
+				input.phone-call(name='phone', id='phone') 
+			+b.input-wrapper
+				label Электронная почта*:
+				input(name='mail', id='mail') 
+		+e.col_head
+			h2 посещенные достопримечательности:
+		+e.col_head
+			h2 Опишите свои эмоции:
