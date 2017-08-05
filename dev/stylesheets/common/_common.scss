@@ -239,6 +239,24 @@ ol {
 
 }
 
+.btn-style{
+    width: 100%;
+    max-width: 480px;
+    height: 58px;
+    background-color: $blue;
+    margin-top: 58px;
+    display: block;
+
+    span{
+        text-align: center;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 58px;
+        text-transform: uppercase;
+        color: $white;
+    } 
+}
+
 
 //input style
 .input-wrapper {
@@ -272,7 +290,7 @@ ol {
     }
 }
 
-.radio_style {
+.radio-style {
     position: relative;
     padding-bottom: 22px;
 
@@ -290,7 +308,6 @@ ol {
 
         &:checked {
             & ~ span {
-                background-color: transparent;
 
                 &:after {
                     opacity: 1;
@@ -341,7 +358,7 @@ ol {
     }
 }
 
-.checkbox_style {
+.checkbox-style {
     position: relative;
     margin-bottom: 12px;
     display: inline-block;
@@ -360,7 +377,7 @@ ol {
 
         &:checked {
             & ~ span {
-                background-color: transparent;
+                // background-color: transparent;
 
                 i {
                     opacity: 1;
@@ -379,77 +396,43 @@ ol {
         position: relative;
         z-index: 2;
         transition: 0.3s ease;
-        background-color: transparent;
-        width: 29px;
-        height: 29px;
-        border-radius: 3px;
-        border: 2px solid $white;
+        width: 56px;
+        height: 56px;
+        // border-radius: 3px;
+        background-color: $light-gray;
         text-align: center;
-
-        i {
-            font-family: "FontAwesome";
-            font-size: 17px;
-            font-weight: 400;
-            text-transform: uppercase;
-            line-height: 24px;
-            transition: 0.3s ease;
-            opacity: 0;
-            color: $white;
-        }
     }
 
     label {
         position: relative;
         z-index: 2;
         margin-left: 19px;
-        color: $white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        width: calc(100% - 80px);
         text-align: left;
-        font-size: 1.5em;
-        font-weight: 300;
-        line-height: 1.5;
-        width: calc(100% - 60px);
-
-        @media #{$lg} {
-            margin-left: 5px;
-        }
-
-        @media #{$sm} {
-            font-size: 20px;
-            font-weight: 300;
-            line-height: 24px;
-        }
-
-        @media #{$xs} {
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 18px;
-        }
     }
 }
 
 .textarea_wrapper {
     width: 100%;
 
-    label {
-        display: block;
-        color: $white;
-        text-align: left;
-        margin-bottom: 8px;
-    }
-
     textarea {
         display: block;
-        background-color: $white;
+        background-color: $light-gray;
         outline: none;
         box-shadow: none;
-        box-sizing: border-box;
         resize: none;
-        // color: $white;
-        padding: 15px 20px;
+        padding: 22px 21px;
         width: 100%;
-        height: 125px;
+        height: 160px;
         line-height: 1;
         text-align: left;
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
     }
 }
 

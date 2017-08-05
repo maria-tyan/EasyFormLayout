@@ -6,17 +6,17 @@
 			+e.col
 				h2 ВАше Общее впечатление:
 				+b.radio-wrapper
-					+b.radio_style
+					+b.radio-style
 						input(name="expression" value="Скорее положительное" type="radio")
 						span
 						label Скорее положительное
 				+b.radio-wrapper
-					+b.radio_style
+					+b.radio-style
 						input(name="expression" value="Скорее отрицательное" type="radio")
 						span
 						label Скорее отрицательное
 				+b.radio-wrapper
-					+b.radio_style
+					+b.radio-style
 						input(name="expression" value="Скорее отрицательное" type="radio")
 						span
 						label Затрудняюсь ответить
@@ -33,13 +33,40 @@
 					input(name='last-name', id='last-name') 
 		+e.col_head
 			h2 Контактная информация:
-			+b.input-wrapper
-				label Телефон*:
-				input.phone-call(name='phone', id='phone') 
-			+b.input-wrapper
-				label Электронная почта*:
-				input(name='mail', id='mail') 
+			+e.col-2
+				+e.col
+					+b.input-wrapper
+						label Телефон*:
+						input.phone-call(name='phone', id='phone') 
+				+e.col
+					+b.input-wrapper
+						label Электронная почта*:
+						input(name='mail', id='mail') 
 		+e.col_head
 			h2 посещенные достопримечательности:
+			+b.checkbox-wrapper
+				+b.checkbox-style
+					input(name="expression" value="Мост Дьявола" type="checkbox")
+					span
+					label Мост Дьявола
+			+b.checkbox-wrapper
+				+b.checkbox-style
+					input(name="expression" value="Гора-Колокол" type="checkbox")
+					span
+					label Гора-Колокол
+			+b.checkbox-wrapper
+				+b.checkbox-style
+					input(name="expression" value="Слайд-парк" type="checkbox")
+					span
+					label Слайд-парк
+			+b.checkbox-wrapper
+				+b.checkbox-style
+					input(name="expression" value="Красные скалы" type="checkbox")
+					span
+					label Красные скалы
 		+e.col_head
 			h2 Опишите свои эмоции:
+			.textarea_wrapper
+				textarea()
+			+b.BUTTOM.btn-style
+				span ОТПРАВИТЬ ОТЗЫВ
