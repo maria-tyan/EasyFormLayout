@@ -239,12 +239,17 @@ ol {
 
 }
 
+.flex-wrapper{
+    display: flex;
+    align-items: center; 
+}
+
 .btn-style{
     width: 100%;
     max-width: 480px;
     height: 58px;
     background-color: $blue;
-    margin-top: 58px;
+    
     display: block;
 
     span{
@@ -257,11 +262,27 @@ ol {
     } 
 }
 
+.label-btn{
+    width: 100%;
+    margin-left: auto;
+    display: block; 
+
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-align: right;
+        color: $light-gray;
+    }
+}
+
 
 //input style
 .input-wrapper {
     display: flex;
     margin-bottom: 20px;
+    position: relative;
 
     label {
         font-size: 14px;
@@ -286,6 +307,35 @@ ol {
 
         &.error {
             // border-color: $pink;
+        }
+    }
+
+    &_phone, &_mail{
+        &:after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 58px;
+            height: 58px;
+            background-color: $gray;
+            left: auto;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            background-image: url(../images/icon-phone.png);
+            background-position: center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &_phone{
+        margin-right: 80px; 
+    }
+
+    &_mail{
+        &:after{
+            background-image: url(../images/icon-mail.png);
         }
     }
 }
@@ -358,6 +408,10 @@ ol {
     }
 }
 
+.checkbox-wrapper {
+    width: 100%;
+}
+
 .checkbox-style {
     position: relative;
     margin-bottom: 12px;
@@ -379,9 +433,8 @@ ol {
             & ~ span {
                 // background-color: transparent;
 
-                i {
+                &:before{ 
                     opacity: 1;
-                    color: $white;
                 }
             }
         }
@@ -398,9 +451,23 @@ ol {
         transition: 0.3s ease;
         width: 56px;
         height: 56px;
-        // border-radius: 3px;
+        border-radius: 3px;
         background-color: $light-gray;
         text-align: center;
+
+        &:before{
+            content: '';
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            display: block;
+            background-image: url(../images/icon-tick.svg);
+            background-position: center center;
+            background-size: 24px 16px;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: all .5s;
+        }
     }
 
     label {
@@ -417,6 +484,7 @@ ol {
 
 .textarea_wrapper {
     width: 100%;
+    margin-bottom: 58px;
 
     textarea {
         display: block;

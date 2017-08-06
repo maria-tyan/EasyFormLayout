@@ -93,13 +93,13 @@
                     <h2>Контактная информация:</h2>
                     <div class="form__col-2">
                         <div class="form__col">
-                            <div class="input-wrapper">
+                            <div class="input-wrapper input-wrapper_phone">
                                 <label>Телефон*:</label>
                                 <input class="phone-call" name="phone" id="phone">
                             </div>
                         </div>
                         <div class="form__col">
-                            <div class="input-wrapper">
+                            <div class="input-wrapper input-wrapper_mail">
                                 <label>Электронная почта*:</label>
                                 <input name="mail" id="mail">
                             </div>
@@ -108,32 +108,34 @@
                 </div>
                 <div class="form__col form__col_head">
                     <h2>посещенные достопримечательности:</h2>
-                    <div class="checkbox-wrapper">
-                        <div class="checkbox-style">
-                            <input name="expression" value="Мост Дьявола" type="checkbox">
-                            <span></span>
-                            <label>Мост Дьявола</label>
+                    <div class="flex-wrapper">
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-style">
+                                <input name="expression" value="Мост Дьявола" type="checkbox">
+                                <span></span>
+                                <label>Мост Дьявола</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="checkbox-wrapper">
-                        <div class="checkbox-style">
-                            <input name="expression" value="Гора-Колокол" type="checkbox">
-                            <span></span>
-                            <label>Гора-Колокол</label>
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-style">
+                                <input name="expression" value="Гора-Колокол" type="checkbox">
+                                <span></span>
+                                <label>Гора-Колокол</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="checkbox-wrapper">
-                        <div class="checkbox-style">
-                            <input name="expression" value="Слайд-парк" type="checkbox">
-                            <span></span>
-                            <label>Слайд-парк</label>
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-style">
+                                <input name="expression" value="Слайд-парк" type="checkbox">
+                                <span></span>
+                                <label>Слайд-парк</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="checkbox-wrapper">
-                        <div class="checkbox-style">
-                            <input name="expression" value="Красные скалы" type="checkbox">
-                            <span></span>
-                            <label>Красные скалы</label>
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-style">
+                                <input name="expression" value="Красные скалы" type="checkbox">
+                                <span></span>
+                                <label>Красные скалы</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,13 +144,37 @@
                     <div class="textarea_wrapper">
                         <textarea></textarea>
                     </div>
-                    <buttom class="btn-style">
-                        <span>ОТПРАВИТЬ ОТЗЫВ</span>
-                    </buttom>
+                    <div class="flex-wrapper">
+                        <buttom class="btn-style">
+                            <span>ОТПРАВИТЬ ОТЗЫВ</span>
+                        </buttom>
+                        <div class="label-btn">
+                            <p>* — обязательные поля</p>
+                        </div>
+                    </div>
                 </div>
             </form>
         </section>
         <footer class="footer">
+            <div class="heshtag">
+                <p>#visitSEDONA</p>
+            </div>
+            <ul class="soc">
+                <li>
+                    <a class="soc-twitter" href=""></a>
+                </li>
+                <li>
+                    <a class="soc-facebook" href=""></a>
+                </li>
+                <li>
+                    <a class="soc-youtube soc-icon-last" href=""></a>
+                </li>
+            </ul>
+            <div class="powered-by">
+                <P>Разработано</P>
+                <img class="logo" src="images/htmlacademy.svg" alt="htmlacademy"
+                    title="" />
+            </div>
         </footer>
     </div>
     <script src="js/bundle.js"></script>

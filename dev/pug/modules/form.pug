@@ -35,38 +35,42 @@
 			h2 Контактная информация:
 			+e.col-2
 				+e.col
-					+b.input-wrapper
+					+b.input-wrapper_phone
 						label Телефон*:
 						input.phone-call(name='phone', id='phone') 
 				+e.col
-					+b.input-wrapper
+					+b.input-wrapper_mail
 						label Электронная почта*:
 						input(name='mail', id='mail') 
 		+e.col_head
 			h2 посещенные достопримечательности:
-			+b.checkbox-wrapper
-				+b.checkbox-style
-					input(name="expression" value="Мост Дьявола" type="checkbox")
-					span
-					label Мост Дьявола
-			+b.checkbox-wrapper
-				+b.checkbox-style
-					input(name="expression" value="Гора-Колокол" type="checkbox")
-					span
-					label Гора-Колокол
-			+b.checkbox-wrapper
-				+b.checkbox-style
-					input(name="expression" value="Слайд-парк" type="checkbox")
-					span
-					label Слайд-парк
-			+b.checkbox-wrapper
-				+b.checkbox-style
-					input(name="expression" value="Красные скалы" type="checkbox")
-					span
-					label Красные скалы
+			+b.flex-wrapper
+				+b.checkbox-wrapper
+					+b.checkbox-style
+						input(name="expression" value="Мост Дьявола" type="checkbox")
+						span
+						label Мост Дьявола
+				+b.checkbox-wrapper
+					+b.checkbox-style
+						input(name="expression" value="Гора-Колокол" type="checkbox")
+						span
+						label Гора-Колокол
+				+b.checkbox-wrapper
+					+b.checkbox-style
+						input(name="expression" value="Слайд-парк" type="checkbox")
+						span
+						label Слайд-парк
+				+b.checkbox-wrapper
+					+b.checkbox-style
+						input(name="expression" value="Красные скалы" type="checkbox")
+						span
+						label Красные скалы
 		+e.col_head
 			h2 Опишите свои эмоции:
 			.textarea_wrapper
 				textarea()
-			+b.BUTTOM.btn-style
-				span ОТПРАВИТЬ ОТЗЫВ
+			+b.flex-wrapper
+				+b.BUTTOM.btn-style
+					span ОТПРАВИТЬ ОТЗЫВ
+				+b.label-btn
+					p * — обязательные поля

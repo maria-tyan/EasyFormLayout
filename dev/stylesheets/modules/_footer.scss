@@ -1,3 +1,38 @@
 .footer {
     color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 102px;
+    padding-bottom: 36px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    .heshtag{
+        p{
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: uppercase;
+            margin-left: 12px;
+        }
+    }
+
+    .powered-by{
+        display: flex;
+        align-items: center;
+
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: uppercase;
+        }
+        .logo{
+            width: 27px;
+            height: 34px;
+            margin-left:  11px;
+        }
+    }
 }
