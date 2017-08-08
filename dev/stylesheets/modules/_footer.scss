@@ -9,6 +9,15 @@
     width: 100%;
     margin: 0 auto;
 
+    @media #{$sm} {
+        max-width: 648px;
+    }
+
+    @media #{$xs} {
+        max-width: 280px;
+        flex-direction: column;
+    }
+
     .heshtag{
         p{
             font-size: 21px;

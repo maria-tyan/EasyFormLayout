@@ -180,11 +180,23 @@ ol {
     max-width: 960px;
     margin: 0 auto;
 
+    @media #{$sm} {
+        max-width: 648px;
+    }
+
+    @media #{$xs} {
+        max-width: 280px;
+    }
+
     &__col{
         width: 100%;
         &-2{
             display: flex;
             position: relative;
+
+            @media #{$xs} {
+                flex-direction: column;
+            }
 
             &:before {
                 content: '';
@@ -195,6 +207,10 @@ ol {
                 background-color: $light-gray;
                 left: 50%;
                 transform: translateX(-50%);
+
+                @media #{$xs} {
+                    display: none;
+                }
             }
 
             h2{
@@ -205,6 +221,10 @@ ol {
 
         &_left-padd{
             padding-left: 15%;
+
+            @media #{$xs} {
+                padding-left: 0;
+            }
         }
 
         &_head {
@@ -242,6 +262,10 @@ ol {
 .flex-wrapper{
     display: flex;
     align-items: center; 
+
+    @media #{$xs} {
+        flex-direction: column;
+    }
 }
 
 .btn-style{
@@ -274,6 +298,10 @@ ol {
         text-transform: uppercase;
         text-align: right;
         color: $light-gray;
+    }
+
+    @media #{$xs} {
+        display: none;
     }
 }
 

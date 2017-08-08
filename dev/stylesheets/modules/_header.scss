@@ -11,6 +11,10 @@
         height: 357px;
         width: 100%;
 
+        @media #{$xs} {
+            height: 158px;
+        }
+
         &:after{
             content: '';
             position: absolute;
@@ -34,6 +38,10 @@
         img{
             width: 461px;
             height: 79px;
+
+            @media #{$xs} {
+                width: 280px;
+            }
         }
     }
 
