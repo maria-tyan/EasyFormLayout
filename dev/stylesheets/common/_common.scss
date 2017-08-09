@@ -77,6 +77,11 @@ h1 {
     text-transform: uppercase;
     padding-top: 108px;
     padding-bottom: 30px;
+
+    @media #{$xs} {
+        padding-top: 41px;
+        font-size: 18px;
+    }
 }
 
 h2 {
@@ -84,6 +89,10 @@ h2 {
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
+
+    @media #{$xs} {
+        font-size: 18px;
+    }
 }
 
 h3 {
@@ -95,6 +104,10 @@ h3 {
     max-width: 450px;
     margin: 0 auto;
     padding-bottom: 70px;
+
+    @media #{$xs} {
+        padding-bottom: 47px;
+    }
 }
 
 h4 {
@@ -179,6 +192,7 @@ ol {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    overflow: hidden;
 
     @media #{$sm} {
         max-width: 648px;
@@ -216,6 +230,10 @@ ol {
             h2{
                 text-align: center;
                 padding-bottom: 60px;
+
+                @media #{$xs} {
+                    padding-bottom: 25px;
+                }
             }
         }
 
@@ -254,6 +272,14 @@ ol {
                     left: auto;
                 }
             }
+
+            .form__col-2{
+                flex-direction: column;
+
+                &:before {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -262,6 +288,10 @@ ol {
 .flex-wrapper{
     display: flex;
     align-items: center; 
+
+    @media #{$sm} {
+        flex-wrap: wrap;
+    }
 
     @media #{$xs} {
         flex-direction: column;
@@ -273,8 +303,9 @@ ol {
     max-width: 480px;
     height: 58px;
     background-color: $blue;
-    
+    transition: all .5s;
     display: block;
+    cursor: pointer;
 
     span{
         text-align: center;
@@ -284,6 +315,10 @@ ol {
         text-transform: uppercase;
         color: $white;
     } 
+
+    &:hover{
+        background-color: $blue-hover;
+    }
 }
 
 .label-btn{
@@ -311,6 +346,9 @@ ol {
     display: flex;
     margin-bottom: 20px;
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 280px;
 
     label {
         font-size: 14px;
@@ -330,7 +368,7 @@ ol {
         font-size: 18px;
         font-weight: 700;
         line-height: 26px;
-        padding: 22px;
+        padding: 0 22px;
 
 
         &.error {
@@ -339,6 +377,9 @@ ol {
     }
 
     &_phone, &_mail{
+        @media #{$xs} {
+            flex-direction: column;
+        }
         &:after{
             content: '';
             position: absolute;
@@ -347,8 +388,9 @@ ol {
             height: 58px;
             background-color: $gray;
             left: auto;
-            top: 0;
+            top: auto;
             right: 0;
+            bottom: 0;
             z-index: 2;
             background-image: url(../images/icon-phone.png);
             background-position: center center;
@@ -359,6 +401,11 @@ ol {
 
     &_phone{
         margin-right: 80px; 
+        width: calc(100% - 80px);
+
+        @media #{$sm} {
+            width: 100%;
+        }
     }
 
     &_mail{
@@ -438,6 +485,16 @@ ol {
 
 .checkbox-wrapper {
     width: 100%;
+
+    @media #{$sm} {
+        width: 50%;
+        flex-basis: 50%;
+    }
+
+    @media #{$xs} {
+        width: 100%;
+        flex-basis: 100%;
+    }
 }
 
 .checkbox-style {
@@ -513,6 +570,10 @@ ol {
 .textarea_wrapper {
     width: 100%;
     margin-bottom: 58px;
+
+    @media #{$xs} {
+        margin-bottom: 51px;
+    }
 
     textarea {
         display: block;

@@ -1,5 +1,3 @@
-require('jquery');//jquery
-require('./plugin/jquery-ui.min.js'); //ui
+require('./lib/jquery-2.1.4.min.js');//jquery
 require('./plugin/jquery.validate.min.js'); //validation
-require('./plugin/jquery.maskedinput.js'); //mask 
 require('./script.js'); //general scripts

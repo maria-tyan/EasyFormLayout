@@ -14,6 +14,8 @@
     }
 
     @media #{$xs} {
+        padding-top: 78px;
+        padding-bottom: 23px;
         max-width: 280px;
         flex-direction: column;
     }
@@ -25,6 +27,10 @@
             line-height: 26px;
             text-transform: uppercase;
             margin-left: 12px;
+        }
+
+        @media #{$xs} {
+            padding-bottom: 41px;
         }
     }
 
@@ -42,6 +48,10 @@
             width: 27px;
             height: 34px;
             margin-left:  11px;
+        }
+
+        @media #{$xs} {
+            padding-top: 40px;
         }
     }
 }

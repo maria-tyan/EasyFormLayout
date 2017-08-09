@@ -1,6 +1,7 @@
 -menu = [{title:'Главная',link:'#'},{title:'ФОТО И ВИДЕО',link:'#'},{title:'',link:'#'},{title:'Форма отзыва',link:'#'},{title:'HTML academy',link:'#'}]
 +b.HEADER.header
-	+b.NAV.nav
+	+b.icon-menu.js-icon-menu
+	+b.NAV.nav.js-nav
 		-for (var i=0; i<menu.length; i++)
 			+e.A.item(href = menu[i].link)
 				span #{menu[i].title}
