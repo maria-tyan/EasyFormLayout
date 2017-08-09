@@ -274,7 +274,10 @@ ol {
             }
 
             .form__col-2{
-                flex-direction: column;
+
+                @media #{$sm} {
+                    flex-direction: column;
+                }
 
                 &:before {
                     display: none;
