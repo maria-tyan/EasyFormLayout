@@ -7,15 +7,19 @@ var sedona = {
     initCache: function () {
         this.$body = $('body');
         this.$iconMenu = $('.js-icon-menu');
+        this.$closeMenu = $('.js-close-menu');
         this.$nav = $('.js-nav');
+
     },
 
     initMenu: function(){
         var _this = this;
         this.$iconMenu.click(function(){
-            if(!$(this).hasClass('_active')){
-                _this.$nav.slideDown().addClass('_active');
-            }            
+            _this.$nav.slideDown().addClass('_active');        
+        })
+
+        this.$closeMenu.click(function(){
+            _this.$nav.slideUp().removeClass('_active');    
         })
     },
 

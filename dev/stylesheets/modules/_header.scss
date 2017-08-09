@@ -88,10 +88,32 @@
     display: flex;
     justify-content: space-around;
     position: relative;
+    width: 100%;
+    z-index: 2;
+
+    .icon-close{
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: -0;
+        left: auto;
+        right: 0;
+        cursor: pointer;
+        background-image: url('../images/icon-cross.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: none;
+        z-index: 3;
+
+        @media #{$xs} {
+            display: block;
+        }
+    }
 
     &__item{
         text-align: center;
         min-width: 80px;
+
         span{
             font-size: 14px;
             font-weight: 700;
@@ -105,11 +127,17 @@
             height: 56px;
             box-shadow: 0 1px 0 rgba($black, 0.2), inset 0 1px 0 rgba($white, 0.2);
             background-color: $blue;
+            color: $white;
+
+            &:nth-child(4){
+                display: none;
+            }
         }
     }
 
     @media #{$xs} {
         display: none;
         position: absolute;
+        top: -56px;
     }
 }

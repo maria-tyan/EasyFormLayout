@@ -15,8 +15,7 @@
     "transform": "browserify-shim"
   },
   "browser": {
-    "custom-el":"./dev/js/plugin/custom_el.js",
-    "migrate":"./dev/js/plugin/migrate.js"
+    "jquery": "./dev/js/lib/jquery-2.1.4.min.js"
   },
   "browserify-shim": {
     "jquery": "$"
